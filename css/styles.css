@@ -1,0 +1,223 @@
+/************************** Element Tags ****************************/
+
+body {
+    font-family: 'Scada', sans-serif;;
+    background-color: #d1e8e2;
+}
+
+h1 {
+    font-family: 'Scada', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+    text-shadow:  #052627 0.5px 0.5px;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+/************************** Class Tags *****************************/
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+/* Header Section */
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: #093e3f 1px 2px;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.header-btn-group {
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.header-img {
+    width: 30%;
+    transform: rotate(10deg);  
+    position: absolute;
+    right: 10%;
+}
+
+.web-button {
+    padding: .5rem 47px;
+}
+
+.download-button {
+    margin: 10px 2px 5px 0;
+}
+
+@media (max-width: 1863px) and (min-width: 1029px) {
+
+}
+
+
+@media (max-width: 1028px) {
+    #header {
+        text-align: center;
+    }
+    
+    .header-img {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+
+/* Feature Section */
+
+.feature-box {
+    text-align: center;
+    padding: 5%;
+}
+
+.feature-icon {
+    text-align: center;
+    font-size: 5rem;
+    color: #15c9cc;
+    margin-bottom: 1rem;
+    text-shadow: #093e3f 2px 3px;
+}
+
+.feature-icon:hover {
+    color:  #116466;
+    text-shadow: #052627 2px 3px;
+} 
+
+.features-p {
+    font-family: "Ubuntu";
+    font-weight: 100;
+    color: gray;
+}
+
+/* Reviews Section */
+
+.review-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/* Pricing Section */
+
+.pricing-col {
+        padding: 3% 2%;
+}
+
+.card-header {
+    background-color: #01828588;
+    font-family: "Ubuntu";
+    color: #fff;
+}
+
+.card-body {
+    background-color: #cce0e0d0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CTA Section */
+
+.cta-title {
+    font-size: 3rem;
+    text-shadow:  #052627 0.5px 0.5px;
+}
+
+/* Footer */
+
+.footer-icon {
+    padding: 8px;
+    color:  #116466;
+    margin-bottom: 1rem;
+}
+
+.footer-icon:hover {
+    color: #15c9cc;
+}
+
+.copyright-txt {
+    font-family: "Ubuntu";
+    font-weight: 100;
+    color: gray;
+}
+
+/**************************** ID Tags *******************************/
+
+#header {
+    background-color: #116466;
+    color: #05a1a3;
+}
+
+#features {
+    background-color: #d1e8e2;
+    padding: 7% 15%;
+    position: relative;
+    z-index: 1;
+}
+
+#reviews {
+    text-align: center;
+    background-color: #d9b08c;
+    color: #fff;
+}
+
+#press {
+    background-color: #d9b08c;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#pricing {
+    text-align: center;
+    padding: 100px;
+    background-color: #e9f8f4;
+}
+
+#cta {
+    background-color: #116466;
+    color: #05a1a3;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+#footer {
+    background-color: #d1e8e2;
+    padding: 7% 15%;
+    text-align: center;
+}
