@@ -26,6 +26,16 @@ h3 {
     font-size: 1.5rem;
 }
 
+li {
+    line-height: 2;
+    font-weight: 300;
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
 /************************** Class Tags *****************************/
 
 .container-fluid {
@@ -72,15 +82,11 @@ h3 {
 }
 
 .download-button {
-    margin: 10px 2px 5px 0;
-}
-
-@media (max-width: 1863px) and (min-width: 1029px) {
-
+    margin: 10px 1px 5px 0;
 }
 
 
-@media (max-width: 1028px) {
+@media (max-width: 991px) {
     #header {
         text-align: center;
     }
@@ -138,7 +144,7 @@ h3 {
 /* Pricing Section */
 
 .pricing-col {
-        padding: 3% 2%;
+    padding: 3% 2%;
 }
 
 .card-header {
@@ -155,16 +161,16 @@ h3 {
 /* CTA Section */
 
 .cta-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 1.5;
     text-shadow:  #052627 0.5px 0.5px;
 }
 
 /* Footer */
 
 .footer-icon {
-    padding: 8px;
+    margin: 20px 10px;
     color:  #116466;
-    margin-bottom: 1rem;
 }
 
 .footer-icon:hover {
