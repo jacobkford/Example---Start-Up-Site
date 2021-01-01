@@ -2,47 +2,66 @@
 
 body {
     font-family: 'Scada', sans-serif;;
-    background-color: #d1e8e2;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+    font-weight: 900;
 }
 
 h1 {
-    font-family: 'Scada', sans-serif;
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: 900;
-    text-shadow:  #052627 0.5px 0.5px;
+    text-shadow: #052627 0.5px 0.5px;
 }
 
 h2 {
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 900;
+}
+
+h1, h2 {
     font-size: 3rem;
-    line-height: 1.5;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
     font-size: 1.5rem;
-}
-
-li {
-    line-height: 2;
-    font-weight: 300;
-    color: gray;
 }
 
 a {
     text-decoration: none;
 }
 
-/************************** Class Tags *****************************/
-
-.container-fluid {
-    padding: 3% 15% 7%;
+p.sub-txt {
+    font-weight: 100;
+    color: gray;
 }
 
-/* Header Section */
+/************************** Class Tags *****************************/
+
+/* Colour Themes */
+
+.theme-1 {
+    background-color: #116466;
+    color: #05a1a3;
+}
+
+.theme-2 {
+    background-color: #d1e8e2;
+    font-family: "Ubuntu";
+}
+
+.theme-3 {
+    background-color: #d9b08c;
+    color: #fff;
+}
+
+/* Containers */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* Nav Bar */
 
 .navbar {
     padding-bottom: 4.5rem;
@@ -65,6 +84,12 @@ a {
     font-weight: 100;
 }
 
+/* Header */
+
+#header .container-fluid {
+    padding: 3% 15% 7%;
+}
+
 .header-btn-group {
     margin: auto;
     margin-top: 4rem;
@@ -77,6 +102,10 @@ a {
     right: 10%;
 }
 
+.header-txt {
+    text-align: left;
+}
+
 .web-button {
     padding: .5rem 47px;
 }
@@ -87,7 +116,8 @@ a {
 
 
 @media (max-width: 991px) {
-    #header {
+
+    .header-txt {
         text-align: center;
     }
     
@@ -97,16 +127,22 @@ a {
     }
 }
 
-
 /* Feature Section */
 
+#features.theme-2 {
+    position: relative;
+    z-index: 1;
+}
+
+#features h3 {
+    color: black;
+}
+
 .feature-box {
-    text-align: center;
     padding: 5%;
 }
 
 .feature-icon {
-    text-align: center;
     font-size: 5rem;
     color: #15c9cc;
     margin-bottom: 1rem;
@@ -117,12 +153,6 @@ a {
     color:  #116466;
     text-shadow: #052627 2px 3px;
 } 
-
-.features-p {
-    font-family: "Ubuntu";
-    font-weight: 100;
-    color: gray;
-}
 
 /* Reviews Section */
 
@@ -137,11 +167,18 @@ a {
     margin: 20px 20px 50px
 }
 
-.carousel-item {
-    padding: 7% 15%;
+/* Press Section */
+
+#press.theme-3 {
+    padding-bottom: 3%;
 }
 
 /* Pricing Section */
+
+#pricing {
+    padding: 100px;
+    background-color: #e9f8f4;
+}
 
 .pricing-col {
     padding: 3% 2%;
@@ -153,9 +190,27 @@ a {
     color: #fff;
 }
 
+.text-muted {
+    font-size: 1.5rem; 
+}
+
+.pricing-card-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(70, 70, 70);
+}
+
 .card-body {
     background-color: #cce0e0d0;
     font-family: 'Montserrat', sans-serif;
+    line-height: 2.5;
+    font-weight: 300;
+    color: gray;
+}
+
+.card-footer {
+    background-color: #cce0e0d0;
+    border-top: 0px;
 }
 
 /* CTA Section */
@@ -175,55 +230,4 @@ a {
 
 .footer-icon:hover {
     color: #15c9cc;
-}
-
-.copyright-txt {
-    font-family: "Ubuntu";
-    font-weight: 100;
-    color: gray;
-}
-
-/**************************** ID Tags *******************************/
-
-#header {
-    background-color: #116466;
-    color: #05a1a3;
-}
-
-#features {
-    background-color: #d1e8e2;
-    padding: 7% 15%;
-    position: relative;
-    z-index: 1;
-}
-
-#reviews {
-    text-align: center;
-    background-color: #d9b08c;
-    color: #fff;
-}
-
-#press {
-    background-color: #d9b08c;
-    text-align: center;
-    padding-bottom: 3%;
-}
-
-#pricing {
-    text-align: center;
-    padding: 100px;
-    background-color: #e9f8f4;
-}
-
-#cta {
-    background-color: #116466;
-    color: #05a1a3;
-    text-align: center;
-    padding: 7% 15%;
-}
-
-#footer {
-    background-color: #d1e8e2;
-    padding: 7% 15%;
-    text-align: center;
 }
